@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FooCamp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="title">Tarjeta de regalo</h1>
+      <hr class="separator" />
+      <p class="message">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
+        molestiae dolorum quibusdam repellendus et voluptas magnam quasi
+        accusamus. Dignissimos saepe rem ea odit vitae inventore qui aperiam
+        placeat praesentium perspiciatis? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Beatae similique itaque earum. Eos, tempore est error
+        sint voluptas sunt perspiciatis assumenda dolores magni placeat quia
+        officiis quo corporis repudiandae deserunt?
+      </p>
+      <button class="send-card">ENVIAR TARJETA</button>
+    </div>
+    <div class="modal hidden">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <h1 class="modal-title">Deseas enviar la tarjeta?</h1>
+        <hr class="modal-separator" />
+        <p class="modal-message">
+          Escribe el nombre de la persona a quién <br />
+          quieres enviar la tarjeta
+        </p>
+        <input
+          type="text"
+          class="modal-text"
+          placeholder="Escibre un nombre..."
+        />
+        <p class="modal-error hidden">
+          *El campo esta vacío, escribe un nombre para poder envíar la tarjeta
+        </p>
+        <div class="modal-buttons">
+          <button type="button" class="modal-cancel">CANCELAR</button>
+          <button type="button" class="modal-continue">CONTINUAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-sent hidden">
+      <h1 class="card-sent-title">
+        Tarjeta enviada a <br />
+        <span id="card-name"></span>
+      </h1>
+      <hr />
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
